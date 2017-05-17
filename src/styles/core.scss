@@ -1,21 +1,212 @@
-@import 'base';
+@import './_base.scss';
 @import '~normalize.css/normalize';
 
-// Some best-practice CSS that's useful for most apps
-// Just remove them if they're not what you want
-html {
-  box-sizing: border-box;
+html, body { font-family: 'Open Sans', sans-serif; background: $background-color; }
+
+input, button { outline: none; }
+
+/*
+  Headers
+ */
+
+h1 {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-light;
+  font-weight: 600;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+h1 span {
+  font-size: 20px;
+  color: $gray-darker;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+h2 {
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
 }
+
+h3 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: $secondary-light;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 12px;
+  color: black;
+  font-weight: 600;
+}
+
+/*
+  Components
+ */
+
+// links
+a {
+  color: $primary;
+  text-decoration: underline;
+}
+
+a:hover, a:focus, a.active {
+  color: $primary-lighter;
+  font-weight: 600;
+}
+
+a:visited {
+  color: none;
+}
+
+a:active {
+  color: $primary-darker;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: solid 1px transparent;
+  background: $gray-light;
+  box-shadow: 3px 3px 0px $gray-darker;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: $gray-lighter;
+}
+
+.btn-secondary {
+  background-color: $secondary-light;
+  color: white;
+  box-shadow: 3px 3px 0px $secondary-darker;
+}
+
+.btn-secondary:hover {
+  background: $secondary-lighter;
+}
+
+.btn-secondary:active {
+  background: $secondary-darker;
+}
+
+.btn-primary {
+  background-color: $primary-light;
+  color: white;
+  box-shadow: 3px 3px 0px $primary-darker;
+}
+
+.btn-primary:hover {
+  background: $primary-lighter;
+}
+
+.btn-primary:active {
+  background: $primary-darker;
+}
+
+.btn.small {
+  font-size: 12px;
+  padding: 12px 14px;
+}
+
+.btn.large {
+  font-size: 18px;
+  padding: 16px 18px;
+}
+
+//Button Group
+
+.button-group .btn {
+  border-radius: 0px;
+  background: $gray;
+  color: black;
+  box-shadow: 0px 0px 4px $gray-darker;
+}
+
+.button-group .btn:hover {
+  background: $gray-darker;
+}
+
+.button-group .btn:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.button-group .btn:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+// Input
+
+.form-control {
+  border-radius: 4px;
+  display: inline-block;
+}
+
+// Pagination
+
+.pagination li {
+  display: inline-block;
+  background: $primary;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  transition: top 0.2s;
+  -webkit-transition: top 0.2s;
+  cursor: pointer;
+}
+
+.pagination li:hover, .pagination li.active {
+  top: -5px;
+}
+
+// DisplayList
+
+.display-list {
+  width: 360px;
+  padding: 10px;
+  text-align: left;
+  margin: 0 auto;
+  background: white;
+  border: $gray-darker;
+  border-radius: 5px;
+}
+
+.display-list ol {
+  margin-bottom: 0;
+}
+
+.display-list li {
+  border-top: solid 1px $gray;
+}
+
+.display-list li:first-child {
+  border: none;
+}
+
+/*
+  Fixes
+ */
+
+.menu>li { margin: 0 2px }
+ul.unstyled { list-style: none }
