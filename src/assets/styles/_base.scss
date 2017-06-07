@@ -1,0 +1,85 @@
+$bootstrap-sass-asset-helper: true;
+$fa-font-path: "~font-awesome/fonts";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import '~normalize.css/normalize';
+@import "~font-awesome/scss/font-awesome.scss";
+
+// Fonts definition
+@font-face {
+	font-family: SulSans;
+	src: url("../fonts/SulSansRegular.eot") format("eot"),
+		 url("../fonts/SulSansRegular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+	font-family: SulSans;
+	src: url("../fonts/SulSansBlack.eot") format("eot"),
+		 url("../fonts/SulSansBlack.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+	font-family: SulSans;
+	src: url("../fonts/SulSansBold.eot") format("eot"),
+		 url("../fonts/SulSansBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+	font-family: SulSans;
+	src: url("../fonts/SulSansLight.eot") format("eot"),
+		 url("../fonts/SulSansLight.woff") format("woff");
+  font-weight: 100;
+}
+
+@font-face {
+	font-family: TiemposTextWeb;
+	src: url("../fonts/TiemposTextWeb-Regular.eot") format("eot"),
+		 url("../fonts/TiemposTextWeb-Regular.woff2") format("woff2"),
+		 url("../fonts/TiemposTextWeb-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+	font-family: TiemposTextWeb;
+	src: url("../fonts/TiemposTextWeb-Bold.eot") format("eot"),
+		 url("../fonts/TiemposTextWeb-Bold.woff2") format("woff2"),
+		 url("../fonts/TiemposTextWeb-Bold.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+	font-family: TiemposTextWeb;
+	src: url("../fonts/TiemposTextWeb-Semibold.eot") format("eot"),
+		 url("../fonts/TiemposTextWeb-Semibold.woff2") format("woff2"),
+		 url("../fonts/TiemposTextWeb-Semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+	font-family: TiemposTextWeb;
+	src: url("../fonts/TiemposTextWeb-RegularItalic.eot") format("eot"),
+		 url("../fonts/TiemposTextWeb-RegularItalic.woff2") format("woff2"),
+		 url("../fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: TiemposTextWeb;
+	src: url("../fonts/TiemposTextWeb-BoldItalic.eot") format("eot"),
+		 url("../fonts/TiemposTextWeb-BoldItalic.woff2") format("woff2"),
+		 url("../fonts/TiemposTextWeb-BoldItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: TiemposTextWeb;
+	src: url("../fonts/TiemposTextWeb-SemiboldItalic.eot") format("eot"),
+		 url("../fonts/TiemposTextWeb-SemiboldItalic.woff2") format("woff2"),
+		 url("../fonts/TiemposTextWeb-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}

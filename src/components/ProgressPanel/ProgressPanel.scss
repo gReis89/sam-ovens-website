@@ -1,0 +1,39 @@
+@import '~assets/styles/_colors.scss';
+
+.progress-panel {
+  width: 197px;
+  height: 243px;
+  border: solid 1px $border-color;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.progress-panel h5 {
+  margin-top: 30px;
+  margin-bottom: 15px
+}
+
+.progress-panel h4 {
+  position: absolute;
+  left: 50%;
+  width: 50px;
+  margin-left: -25px;
+  text-align: center;
+  top: 90px;
+  font-size: 28px;
+}
+.progress-panel h4 sub {
+  font-size: 21px;
+  vertical-align: super;
+  bottom: -9px;
+}
+
+.progress-panel .rc-progress-circle {
+  width: 115px
+}
+
+.progress-panel button {
+  margin-top: 10px;
+}

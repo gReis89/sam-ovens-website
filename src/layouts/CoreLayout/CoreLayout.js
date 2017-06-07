@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../../components/Header'
+import Header from 'components/Header'
+import Sidebar from 'components/Sidebar'
 import './CoreLayout.scss'
-import '../../styles/core.scss'
+import 'assets/styles/core.scss'
 
 export const CoreLayout = ({ children }) => (
-  <div className='row'>
+  <div>
     <Header />
-    <div className='core-layout__viewport'>
-      {children}
+    <div className='container'>
+      <Sidebar />
+      <div className='main'>
+        {children}
+      </div>
     </div>
   </div>
 )

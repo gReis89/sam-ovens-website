@@ -1,0 +1,22 @@
+@import '~assets/styles/_colors.scss';
+
+.training-banner {
+  background: $base;
+  height: 200px;
+}
+
+.training-banner h2 {
+  color: $base-feature;
+  text-align: center;
+  margin: 0;
+}
+
+.training-banner h6 {
+  color: $base-text;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 66px 0 5px 0;
+  font-stretch: semi-expanded;
+  letter-spacing: 2px
+}

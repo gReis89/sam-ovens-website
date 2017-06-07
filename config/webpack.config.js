@@ -19,7 +19,10 @@ const webpackConfig = {
     root       : project.paths.client(),
     extensions : ['', '.js', '.jsx', '.json']
   },
-  module : {}
+  module : {},
+  devServer: {
+    headers: { 'Access-Control-Allow-Origin': '*' }
+  }
 }
 // ------------------------------------
 // Entry Points
@@ -143,6 +146,10 @@ webpackConfig.module.loaders.push({
     BASE_CSS_LOADER,
     'postcss',
     'sass?sourceMap'
+  ],
+  use: [
+    { loader: 'style-loader' },
+    { loader: 'css-loader' }
   ]
 })
 webpackConfig.module.loaders.push({

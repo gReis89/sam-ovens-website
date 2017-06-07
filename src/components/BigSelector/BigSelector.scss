@@ -1,0 +1,34 @@
+@import '~assets/styles/_colors.scss';
+
+.big-selector .big-selector-button {
+  @include verticalGradient($gradient-lighter, $gradient-darker);
+  height: 58px;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.big-selector .big-selector-button:hover, .big-selector .big-selector-button.active {
+  background: $gradient-lighter;
+}
+
+.big-selector .big-selector-button .big-selector-value {
+  font-size: 18px;
+  float: left;
+}
+
+.big-selector .big-selector-button .big-selector-value {
+  font-size: 18px;
+  float: left;
+  width: 77%;
+  line-height: 58px;
+  text-indent: 10%;
+}
+
+.big-selector .big-selector-button .big-selector-arrow {
+  float: left;
+  width: 23%;
+  text-align: center;
+  line-height: 58px;
+  border-left: solid 1px rgba(0,0,0,.1);
+}

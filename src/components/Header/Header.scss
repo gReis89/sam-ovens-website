@@ -1,5 +1,13 @@
-@import '~styles/_base.scss';
+@import '~assets/styles/_colors.scss';
 
-a {
-  text-transform: uppercase;
+header { background: $base; height: 54px; }
+
+header .menu-trigger {
+  position: absolute;
+  top: 22px;
+  left: 16px;
+}
+
+header .logo {
+  margin: 13px 0 0 40px
 }

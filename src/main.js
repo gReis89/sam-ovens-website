@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import createStore from './store/createStore'
+import createStore from './store/configure-store'
 import AppContainer from './containers/AppContainer'
 
 // ========================================================

@@ -1,18 +1,15 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
+import Nav from 'components/Nav'
 import './Header.scss'
+import logo from 'assets/imgs/logo.svg'
+import iconMenu from 'assets/imgs/icon-menu.svg'
 
 export const Header = () => (
-  <div className='text-center'>
-    <h1>StudySoup <span>web application</span></h1>
-    <h4>Guilherme Rodrigues</h4>
-    <div className='menu-centered'>
-      <ul className='menu text-center'>
-        <li><IndexLink to='/' activeClassName='active'>App</IndexLink></li>
-        <li><Link to='/style-guide' activeClassName='active'>Style Guide</Link></li>
-      </ul>
-    </div>
-  </div>
+  <header>
+    <a className='menu-trigger'><img className='pull-left' src={iconMenu} /></a>
+    <img className='logo pull-left' src={logo} />
+    <Nav />
+  </header>
 )
 
 export default Header

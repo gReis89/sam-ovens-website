@@ -1,0 +1,29 @@
+@import '~assets/styles/_colors.scss';
+
+nav {
+  margin: 17px 31px 16px 0;
+}
+
+nav a {
+  color: $header-menu-links;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 31px;
+}
+
+nav a * {
+  vertical-align: sub;
+}
+
+nav a img {
+  margin-right: 5px;
+}
+
+nav a:first-child {
+  margin: 0;
+}
+
+nav a:hover {
+  font-weight: normal;
+  text-decoration: none;
+}

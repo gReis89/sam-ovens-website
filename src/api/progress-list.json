@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Overview From Sam",
+    "status": "done"
+  },
+  {
+    "description": "Million Dollar Sales",
+    "status": "inprogress"
+  },
+  {
+    "description": "Training",
+    "status": "todo"
+  },
+  {
+    "description": "Action Items",
+    "status": "todo"
+  },
+  {
+    "description": "Questions & Support",
+    "status": "todo"
+  }
+]

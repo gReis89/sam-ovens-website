@@ -1,0 +1,14 @@
+@import '~assets/styles/_colors.scss';
+
+.btn.btn-light {
+  background: white;
+  color: $primary;
+  border: solid 1px $border-color;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn.btn-light:hover {
+  background: $primary;
+  color: white;
+}

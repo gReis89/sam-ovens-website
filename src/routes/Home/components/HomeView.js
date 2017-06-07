@@ -32,7 +32,7 @@ export class HomeView extends React.Component {
 
   render () {
     return (
-      <div className='row text-center'>
+      <div className='row'>
         <h2>App</h2>
         <hr />
         <div>
