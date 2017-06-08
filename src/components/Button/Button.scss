@@ -12,3 +12,15 @@
   background: $primary;
   color: white;
 }
+
+.btn.btn-primary {
+  background: $primary;
+  font-size: 12px;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.btn.btn-primary:hover {
+  background: $primary-lighter;
+  color: white;
+}

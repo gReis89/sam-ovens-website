@@ -1,0 +1,22 @@
+.lesson-controller {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.lesson-controller a {
+  cursor: pointer;
+  color: #999EA1;
+  font-size: 12px;
+}
+
+.lesson-controller .prev {
+  position: absolute;
+  left: 0;
+}
+
+.lesson-controller .next {
+  position: absolute;
+  right: 0;
+}

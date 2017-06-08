@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Button.scss'
 
-export const Button = ({ value, size, onClick }) => {
+export const Button = ({ value, size, onClick, type }) => {
   const defineClass = () => {
-    let _class = 'btn btn-light'
+    let _class = 'btn'
+    _class += ' btn-' + type
     _class += ' ' + size
     return _class
   }
@@ -16,9 +17,10 @@ export const Button = ({ value, size, onClick }) => {
 }
 
 Button.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.string.isRequired,
   size: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  type: PropTypes.string
 }
 
 export default Button

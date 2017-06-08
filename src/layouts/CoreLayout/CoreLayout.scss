@@ -5,9 +5,54 @@
 }
 
 .main {
+  width: 995px;
+  float: right;
+}
+
+.main .holder {
   background: $main-content;
   border: solid 1px $border-color;
   border-radius: 5px;
-  width: 995px;
-  float: right;
+  padding: 55px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    float: none;
+    width: auto;
+  }
+  .sidebar {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    width: 500px;
+  }
+  .sidebar {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    width: 640px;
+  }
+  .sidebar {
+    width: 270px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+      width: 800px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main {
+      width: 995px;
+  }
 }

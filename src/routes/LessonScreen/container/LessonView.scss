@@ -1,0 +1,45 @@
+@import '~assets/styles/_colors.scss';
+
+.lesson h5 {
+  margin-bottom: 28px;
+}
+
+.lesson .video-box { margin-top: 48px; }
+
+.lesson .text-light {
+  color: #999EA1;
+}
+
+.lesson .lesson-about {
+  margin-top: 59px;
+}
+
+
+.lesson .about-text {
+  font-size: 18px;
+  color: #787E82;
+  font-weight: 100;
+}
+
+.lesson  .video-transcript {
+  margin-top: 96px;
+}
+
+.lesson  .video-transcript .expand-view {
+  margin-top: 12px;
+  color: $primary;
+}
+
+.lesson .transcript-box {
+  background: $box-background;
+  padding: 58px;
+  color: #8C9093;
+  font-size: 15px;
+  font-weight: 100;
+  border-radius: 5px;
+  border: solid 1px $border-color;
+}
+
+.lesson .transcript-box .read-more {
+  margin-top: 65px
+}

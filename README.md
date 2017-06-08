@@ -1,6 +1,6 @@
-# StudySoup application process
+# Sam Ovens Website
 
-This is an app made with React for an application process of StudySoup.
+This is an app made with React for Sam Ovens.
 
 ## Requirements
 * node `^4.5.0`
@@ -11,7 +11,7 @@ This is an app made with React for an application process of StudySoup.
 First, clone the project:
 
 ```bash
-$ git clone https://github.com/gReis89/studysoup.git <my-project-name>
+$ git clone https://github.com/gReis89/sam-ovens-website.git <my-project-name>
 $ cd <my-project-name>
 ```
 

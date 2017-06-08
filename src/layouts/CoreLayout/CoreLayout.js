@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Header from 'components/Header'
 import Sidebar from 'components/Sidebar'
+import Footer from 'components/Footer'
 import './CoreLayout.scss'
 import 'assets/styles/core.scss'
 
@@ -11,7 +12,10 @@ export const CoreLayout = ({ children }) => (
     <div className='container'>
       <Sidebar />
       <div className='main'>
-        {children}
+        <div className='holder'>
+          {children}
+        </div>
+        <Footer />
       </div>
     </div>
   </div>
