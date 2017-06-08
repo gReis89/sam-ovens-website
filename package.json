@@ -73,7 +73,7 @@
     "type": "git",
     "url": "git+https://github.com/greis89/sam-ovens-website.git"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "Guilherme Rodrigues <guilherme.r89@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.17.0",
