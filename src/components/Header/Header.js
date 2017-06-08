@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from 'components/Nav'
 import CollapsedNav from 'components/CollapsedNav'
 import './Header.scss'
-import logo from 'assets/imgs/logo.svg'
+import logo from 'assets/imgs/company-logo.svg'
 import iconMenu from 'assets/imgs/icon-menu.svg'
 
 export class Header extends React.Component {
