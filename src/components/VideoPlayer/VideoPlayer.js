@@ -6,7 +6,7 @@ export const VideoPlayer = ({ id }) => (
     <iframe src={`//fast.wistia.net/embed/iframe/${id}`}
       allowTransparency frameBorder='0'
       scrolling='no' className='wistia_embed' name='wistia_embed'
-      allowFullScreen width='100%' height='479' />
+      allowFullScreen width='100%' height='100%' />
   </div>
 )
 

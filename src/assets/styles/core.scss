@@ -61,7 +61,7 @@ h6 {
  */
 .strong { font-weight: 600; }
 
-.video { border-radius: 5px; overflow: hidden; height: 479px; }
+a { cursor: pointer }
 
 /*
   Bootstrap overwrite
@@ -72,5 +72,5 @@ h6 {
        width: 1368px;
    }
  }
- 
+
  button:active { outline: none !important; }

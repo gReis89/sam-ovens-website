@@ -7,10 +7,10 @@ import iconSearch from 'assets/imgs/icon-search.svg'
 
 export const Nav = () => (
   <nav className='pull-right'>
-    <a><img src={iconUser} /> Hi David! <span className='caret' /></a>
-    <a><img src={iconCommunity} /> Community <span className='caret' /></a>
-    <a><img src={iconHelp} /> Help <span className='caret' /></a>
-    <a><img src={iconSearch} /></a>
+    <a className='hidden-xs'><img src={iconUser} /> Hi David! <span className='caret' /></a>
+    <a className='hidden-xs'><img src={iconCommunity} /> Community <span className='caret' /></a>
+    <a className='hidden-xs'><img src={iconHelp} /> Help <span className='caret' /></a>
+    <a className='search'><img src={iconSearch} /></a>
   </nav>
 )
 

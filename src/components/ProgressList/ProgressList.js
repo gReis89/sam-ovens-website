@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import _map from 'lodash/map'
 import iconOk from 'assets/imgs/icon-ok.svg'
 import iconCurrent from 'assets/imgs/icon-current.svg'

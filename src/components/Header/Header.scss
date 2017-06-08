@@ -1,6 +1,9 @@
 @import '~assets/styles/_colors.scss';
 
-header { background: $base; height: 54px; }
+header {
+  background: $base;
+  height: 54px;
+}
 
 header .menu-trigger {
   position: absolute;
@@ -9,5 +12,21 @@ header .menu-trigger {
 }
 
 header .logo {
-  margin: 13px 0 0 40px
+  margin: 13px 0 0 40px;
+  float: left;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header .logo {
+    float: none;
+  }
+  header .search {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+  }
 }

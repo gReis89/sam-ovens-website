@@ -1,3 +1,5 @@
+@import '~assets/styles/_colors.scss';
+
 .lesson-controller {
   height: 40px;
   line-height: 40px;
@@ -19,4 +21,23 @@
 .lesson-controller .next {
   position: absolute;
   right: 0;
+}
+
+
+@media (max-width: 768px) {
+  .lesson-controller {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: white;
+    line-height: 55px;
+    width: 100%;
+    height: 55px;
+    border-top: solid 1px #EAEEEF;
+    box-shadow: 0 -10px 30px rgba(0,0,0, .05);
+  }
+  .lesson-controller a {
+    margin: 0 10px;
+  }
 }

@@ -7,15 +7,24 @@ export class LessonView extends React.Component {
   constructor () {
     super()
     this.state = {
+      lessonIsVisible: true
     }
   }
 
-  goToNextLesson () {
+  goToNextLesson = () => {
     console.log('next lession')
   }
 
-  goToPrevLesson () {
+  goToPrevLesson = () => {
     console.log('prev lession')
+  }
+
+  showLesson = () => {
+    this.setState({ lessonIsVisible: true })
+  }
+
+  hideLesson = () => {
+    this.setState({ lessonIsVisible: false })
   }
 
   render () {
@@ -23,7 +32,10 @@ export class LessonView extends React.Component {
       <div>
         <Lesson data={lesson}
           goPrev={this.goToPrevLesson}
-          goNext={this.goToNextLesson} />
+          goNext={this.goToNextLesson}
+          showLesson={this.showLesson}
+          hideLesson={this.hideLesson}
+          lessonVisible={this.state.lessonIsVisible} />
       </div>
     )
   }

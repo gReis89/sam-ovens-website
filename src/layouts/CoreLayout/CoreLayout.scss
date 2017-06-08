@@ -2,11 +2,19 @@
 
 .container {
   padding: 54px 0;
+  display: flex;
+  flex-direction: line;
+  align-items: flex-start;
 }
 
 .main {
   width: 995px;
-  float: right;
+  order: 2;
+  margin-left: 45px;
+}
+
+.sidebar {
+  order: 1;
 }
 
 .main .holder {
@@ -17,42 +25,33 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .main {
-    float: none;
-    width: auto;
+    width: 100%;
+    order: 1;
+    margin-left: 0;
   }
   .sidebar {
     float: none;
-    width: auto;
+    width: 100%;
+    padding: 0 40px 60px 40px;
+    order: 2;
+    margin-top: 20px;
   }
-}
 
-@media (min-width: 768px) {
-  .main {
-    width: 500px;
+  .sidebar .progress-panel {
+    margin: 0 auto;
   }
-  .sidebar {
-    width: 200px;
-  }
-}
 
-@media (min-width: 1000px) {
-  .main {
-    width: 640px;
-  }
-  .sidebar {
-    width: 270px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .main {
-      width: 800px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .main {
-      width: 995px;
+  .main .holder {
+    border: 0;
+    border-radius: 0;
+    padding: 20px 0;
+    border-bottom: solid 1px $border-color;
   }
 }
